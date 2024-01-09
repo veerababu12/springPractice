@@ -11,7 +11,7 @@
 
 now we creating beans(order,cutomer) and config meta data(cmd) and passing to spring container.
 
-here cmd is used to pass values to beans.
+here Cmd is used to pass values to beans.
 
 we pass values to 
 
