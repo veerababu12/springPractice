@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+<!--
+
+now we creating beans(order,cutomer) and config meta data(cmd) and passing to spring container.
+
+here cmd is used to pass values to beans.
+
+we pass values to 
+
+1.primitive data types variables
+
+2.collections variables
+
+3.reference variables
+
+and it can be done in 3 ways
+
+1.as element
+
+2.as attribute
+
+3 as p-schema
+
+-->
+
+<bean name="cus" class="com.springPractice.setterinjection.myfirstproject.Customer">
+
+<!-- as element -->
+<property name="name">
+<value>Sowjanya</value>
+</property>
+
+<!-- as attribute -->
+<property name="contact" value="7766554433"/>
+
+<property name="address" value="guntur"/>
+
+
+<!-- as attribute
+<bean name="cus" class="com.springPractice.setterinjection.myfirstproject.Customer" p:address="kkd"/>
+ -->
+
+</bean>
+
+
+</beans>
