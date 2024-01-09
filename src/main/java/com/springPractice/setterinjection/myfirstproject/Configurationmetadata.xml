@@ -19,6 +19,39 @@ we pass values to
 
 2.collections variables
 
+if collection objects then 
+
+a.list,set
+
+
+ex:
+
+<property name="address">
+
+<list>/<set>
+
+<value>kkd</value>
+<value>tuni</value>
+
+</list>
+
+</property>
+
+b.map,properties
+
+<property name="address">
+
+
+<Map>/<props>
+<entry key="eastGodavari" value="tuni">/<prop key="east">Tuni</prop>
+<entry key="westGodavari" value="bhimavaram">
+
+</Map>
+
+</property>
+
+
+
 3.reference variables
 
 and it can be done in 3 ways
@@ -50,5 +83,10 @@ and it can be done in 3 ways
 
 </bean>
 
+<!-- 3.reference variables -->
+
+<bean name="order" class="com.springPractice.setterinjection.myfirstproject.order" p:productId="106" p:productName="biscuits" p:orderDate="09/01/24" p:customer-ref="cus"/>
 
 </beans>
+
+

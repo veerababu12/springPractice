@@ -16,10 +16,16 @@ public class App
     	
 		ApplicationContext context=new ClassPathXmlApplicationContext("com/springPractice/setterinjection/myfirstproject/Configurationmetadata.xml"); // if cmd out of src then  no need to specify
 		
-		//get object
+		//get customer object
 		
 		Customer customer=(Customer)context.getBean("cus"); // getbean returns as obj form and to convert to custoner type we use explict type conversion here
 		
 		System.out.println("name="+customer.getName());
+		
+		//get order object
+
+		order order=(order)context.getBean("order");
+		
+		System.out.println("productId="+order.getProductId()+"\nproductName="+order.getProductName()+"\norderDate="+order.getOrderDate()+"\nCustomer name="+order.getCustomer().getName());
     }
 }
