@@ -87,6 +87,40 @@ and it can be done in 3 ways
 
 <bean name="order" class="com.springPractice.setterinjection.myfirstproject.order" p:productId="106" p:productName="biscuits" p:orderDate="09/01/24" p:customer-ref="cus"/>
 
+<!-- 4 constructor  -->
+
+<bean name="cus2" class="com.springPractice.setterinjection.myfirstproject.Customer2">
+
+<constructor-arg>
+<value>santosh</value>
+</constructor-arg>
+
+
+<constructor-arg value="vskp" index="2"/>
+
+<constructor-arg value="6302733687" index="1"/>
+
+
+
+</bean>
+
+
+<bean name="order2" class="com.springPractice.setterinjection.myfirstproject.Order2">
+
+
+<constructor-arg ref="cus2" index="3"/>
+
+
+<constructor-arg value="106" index="0"/>
+
+<constructor-arg value="apple" index="1"/>
+
+<constructor-arg value="10/01/24" index="2"/>
+
+</bean>
+
+
+
 </beans>
 
 
