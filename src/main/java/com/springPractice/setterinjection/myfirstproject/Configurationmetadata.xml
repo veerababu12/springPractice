@@ -104,7 +104,6 @@ and it can be done in 3 ways
 
 </bean>
 
-
 <bean name="order2" class="com.springPractice.setterinjection.myfirstproject.Order2">
 
 
@@ -119,6 +118,24 @@ and it can be done in 3 ways
 
 </bean>
 
+<!-- 
+
+
+<bean name="customer" class="com.springPractice.setterinjection.myfirstproject.Order2" autowire="constructor">
+
+
+<constructor-arg value="106" index="0"/>
+
+<constructor-arg value="apple" index="1"/>
+
+<constructor-arg value="10/01/24" index="2"/>
+
+
+it can also be done byType,byName if setter,getter present
+
+</bean>
+
+--> 
 
 
 </beans>

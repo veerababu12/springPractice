@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    
+    <!-- if annoations usen for autowiring we need to use context tag -->
+    <context:annotation-config></context:annotation-config>
+    
+    <bean name="customer3" class="com.springPractice.setterinjection.myfirstproject.Customer3">
+    
+    <property name="name" value="veera"/>
+    
+    <property name="contact" value="6302733687"/>
+    
+    <property name="address" value="vizag"/>
+    
+    
+    </bean>
+    
+    
+<bean name="order" class="com.springPractice.setterinjection.myfirstproject.Order3" p:productId="128" p:productName="biscuits" p:orderDate="13/01/24"/>
+   
+   
+    
+    
+ </beans>
