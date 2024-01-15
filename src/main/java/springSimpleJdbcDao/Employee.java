@@ -6,6 +6,11 @@ public class Employee {
 		String name;
 		String exp;
 		
+		public Employee()
+		{
+			
+		}
+		
 		public Employee(int id,String name,String exp)
 		{
 		super();
